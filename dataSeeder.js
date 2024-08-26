@@ -1,5 +1,7 @@
 // https://www.wiktionary.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category:English_given_names&cmlimit=500
 
+import { writeFile } from 'fs';
+
 const endpoint =
 	'https://www.wiktionary.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category:English_female_given_names&cmlimit=500';
 
@@ -43,4 +45,14 @@ function handleContinue(cmcontinue) {
 
 const nameData = await getData(endpoint);
 
-console.log(nameData);
+const obj = {
+	female: nameData,
+};
+const json = JSON.stringify(obj);
+writeFile('data/femaleNames.json', json, (err) => {
+	if (err) {
+		console.log(err);
+	} else {
+		// File written successfully.
+	}
+});
