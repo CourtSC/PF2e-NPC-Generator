@@ -3,7 +3,7 @@
 import { writeFile } from 'fs';
 
 const endpoint =
-	'https://www.wiktionary.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category:English_female_given_names&cmlimit=500';
+	'https://www.wiktionary.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category:English_surnames&cmlimit=500';
 
 async function getData(endpoint) {
 	process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
@@ -49,7 +49,7 @@ const obj = {
 	female: nameData,
 };
 const json = JSON.stringify(obj);
-writeFile('data/femaleNames.json', json, (err) => {
+writeFile('names.json', json, (err) => {
 	if (err) {
 		console.log(err);
 	} else {
