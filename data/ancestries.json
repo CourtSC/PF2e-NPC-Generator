@@ -1,0 +1,19 @@
+{
+	"common": [
+		{
+			"ancestry": "Dwarf",
+			"description": "Dwarves are a short, stocky people who are often stubborn, fierce, and devoted.\n\nDwarves have a well-earned reputation as a stoic and stern people, but they also have an unbridled zeal and deeply value artisanship. To a stranger, they can seem untrusting and clannish, but to their friends and family, they are warm and caring. While trust from a dwarf is hard-won, once gained it is as strong as iron.\n\nIf you want to play a character who is as hard as nails, a stubborn and unrelenting adventurer, with a mix of rugged toughness and deep wisdom, you should play a dwarf.",
+			"heritages": [
+				"Ancient-Blooded",
+				"Death Warden",
+				"Forge",
+				"Rock",
+				"Strong-Blooded"
+			],
+			"minAge": 25,
+			"maxAge": 350
+		}
+	],
+	"uncommon": [],
+	"rare": []
+}
